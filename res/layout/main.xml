@@ -3,10 +3,16 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@android:color/white"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+	<ListView
+		android:id="@+id/messageList"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:divider="@null"
+		android:dividerHeight="15dip"
+		android:cacheColorHint="#000000"
+		android:listSelector="@layout/message_list_item_style"
+		/>
+		
 </LinearLayout>
